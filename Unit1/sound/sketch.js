@@ -17,7 +17,7 @@ function draw() {
 }
 
 function mouseReleased() {
-  if (epic.isPlaying)() { 
+  if (epic.isPlaying()) { 
     epic.pause();
   } else {
     epic.play();
