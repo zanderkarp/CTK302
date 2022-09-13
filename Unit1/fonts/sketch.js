@@ -14,5 +14,5 @@ function draw() {
   text("Hello there!", width/2, 100);
 
   textFont (f2, 24);
-  text("I'm Zander", width/2, 200);
+  text("My name is Zander", width/2, 200);
 }
