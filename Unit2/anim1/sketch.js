@@ -8,7 +8,7 @@ function setup() {
 }
 
 function draw() {
-background(100);
+background("red");
 textFont(f1, 60);
 text("Jesus christ, it's Jason Bourne!", x, 200);
 x -= 5;
