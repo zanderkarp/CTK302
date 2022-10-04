@@ -64,9 +64,4 @@ fill("blue");
     x = 0;
   }
 
-function mouseReleased() {
-  state++;
-  if (state > 2) state = 0;
-
-}
 }
