@@ -90,15 +90,10 @@ switch(state)
   state++;
   }
  }
- if (state = 5 && mouseIsPressed) {
+ if (state == 5 && mouseIsPressed) {
   state = 0;
+  timer = 0;
 }
  
-
-function mousePressed() {
-  if (state = 5) {
-    state = 0;
-  }
-}
 
 

@@ -11,25 +11,28 @@ function draw() {
   
   switch(numberOfTouches) {
     case 0: 
-      text("no one is touching the screen", 5, 22) ; 
+      text("no cat", 5, 22) ; 
       break ;
       
       case 1: 
-       text("it's kind of lonely here", 5, 22) ; 
+       text("One cat", 5, 22) ; 
       // put a picture here
       break ;
       
       case 2:
-      text("two fingers are touching the screen", 5, 22) ; 
+      text("Two cat", 5, 22) ; 
             // put a picture here
       break ;
       
       case 3:
-     text("three are touching the screen", 5, 22) ; 
+     text("Red cat", 5, 22) ; 
             // put a picture here
       break ;
     
-      
+      case 4:
+        text("Blue cat", 5, 22) ; 
+               // put a picture here
+         break ;
   }
   
 }
