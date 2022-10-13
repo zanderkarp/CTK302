@@ -1,6 +1,7 @@
 let mic;
 let vol = 0;
 let approachingVol = 0;
+let i1, i2;
 
 // variables that you might want to tweak
 let theLoudestItGets = 0.2; // check your mic inputs and see how loud it gets, put it here.
@@ -8,6 +9,9 @@ var ease = 0.08; // how responsive do you want this? Higher numbers mean faster 
 
 function setup() {
   createCanvas(400, 400);
+
+  i1 = loadImage("images/roadrunner.jpg");
+  i2 = loadImage("images/coyote.jpg");
 
   // code for initializing mic in.
   mic = new p5.AudioIn(); // what does "new" mean?
@@ -26,7 +30,7 @@ function draw() {
   // text on the screen for debugging
   textSize(18);
   text(
-    "Click the screen first to give\npermission for mic input.\nMy volume is " +
+    "Click the screen first to give\npermission for mic input.\nYell to help Road Runner get away from \n Wile E. Coyote! \nMy volume is " +
       vol.toFixed(3) +
       "\nApproaching Vol = " +
       approachingVol.toFixed(3),
@@ -37,11 +41,11 @@ function draw() {
   // this moves that first box
 //  x = vol*200 ;
  x = map(vol, 0, theLoudestItGets, 0, width);
-  rect(x, 200, 50, 50);
+  image(i1, x, 200, 50, 50);
 
   // use y for your "gradual" variable!
   y = map(approachingVol, 0, theLoudestItGets, 0, width);
-  rect(y, 270, 50, 50);
+  image(i2, y, 270, 50, 50);
 
 
   // this maps z to between 0 and 3 so you can switch on it.
