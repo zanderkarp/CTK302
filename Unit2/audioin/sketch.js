@@ -19,7 +19,7 @@ function setup() {
 }
 
 function draw() {
-  background("green");
+  background("yellow");
 
   // get the sound input
   vol = mic.getLevel(); // returned level is between 0 and 1
