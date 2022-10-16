@@ -31,7 +31,7 @@ switch(state)
     break;
 
   case 1:
-    background("#50e3c2");
+    background("#ef001d");
     text("Background on Bruce the Goose", width/2, 75);
     image(i5, 100, 90, 300, 425);
 
